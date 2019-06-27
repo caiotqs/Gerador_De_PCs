@@ -1,0 +1,8 @@
+var listaRacas = [
+    { dsc: "Dwarf", dv: 8, ArmasCorpo: [0,1,3], ArmasDist: [0], Armadura: [0,1,3], ListaTalentosRaciais: [16, 14, 9], ListaTalentosCombate: [], ListaTalentosGerais: [], ListaTalentosMagicos: [], ListaDesvantagens: [], qtddTalentosExtra: 1},
+    { dsc: "Elf", dv: 6, ArmasCorpo: [0], ArmasDist: [0,1], Armadura: [0], ListaTalentosRaciais: [16, 12, 4], ListaTalentosCombate: [], ListaTalentosGerais: [], ListaTalentosMagicos: [], ListaDesvantagens: [], qtddTalentosExtra: 1},
+    { dsc: "Gnome", dv: 6, ArmasCorpo: [0], ArmasDist: [0,1], Armadura: [0], ListaTalentosRaciais: [17, 5, 13], ListaTalentosCombate: [], ListaTalentosGerais: [], ListaTalentosMagicos: [], ListaDesvantagens: [11], qtddTalentosExtra: 1},
+    { dsc: "Halfling", dv: 6, ArmasCorpo: [0,1,3], ArmasDist: [0], Armadura: [0], ListaTalentosRaciais: [17, 3], ListaTalentosCombate: [], ListaTalentosGerais: [15], ListaTalentosMagicos: [], ListaDesvantagens: [11], qtddTalentosExtra: 1},
+    { dsc: "Orc", dv: 8, ArmasCorpo: [0], ArmasDist: [0], Armadura: [0,1], ListaTalentosRaciais: [16, 8], ListaTalentosCombate: [], ListaTalentosGerais: [], ListaTalentosMagicos: [], ListaDesvantagens: [], qtddTalentosExtra: 1},
+    { dsc: "Human", dv: 8, ArmasCorpo: [0], ArmasDist: [0], Armadura: [0,1,3], ListaTalentosRaciais: [17], ListaTalentosCombate: [], ListaTalentosGerais: [], ListaTalentosMagicos: [], ListaDesvantagens: [], qtddTalentosExtra: 3}
+];

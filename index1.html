@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="controller.js"></script>
+    <script src="geradorDeNomes.js"></script>
+    <script src="roladorDeDados.js"></script>
+    <script src="ListasFonte/ListaLetras.js"></script>
+    <script src="ListasFonte/ListaRaca.js"></script>
+    <script src="ListasFonte/ListaEquipamentos.js"></script>
+    <script src="ListasFonte/ListaSkills.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarExample">
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 form-group">
+                <div>
+                    <h1 class="mt-5">Gerador de Personagens Aleatórios</h1>
+                </div>
+            </div>
+        </div>
+
+        </br>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="raceTalents">
+                    <label class="form-check-label">Can learn others races talents.</label>
+                  </div>
+            </div>
+        </div>
+        </br>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <button onclick="setarTodosValores()" class="btn btn-primary">Gerar</button>
+                </div>
+            </div>
+        </div>
+        </br>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" disabled class="form-control message" id="Nome"
+                        style="resize:none;  size: 100%; "></textarea>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-group">
+                    <label>Race</label>
+                    <input type="text" disabled class="form-control message" id="Raca"
+                        style="resize:none;  size: 100%; "></textarea>
+                </div>
+            </div>
+            <div class="col-sm-1">
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="text" disabled class="form-control message" id="Idade"
+                        style="resize:none;  size: 100%; "></textarea>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-group">
+                    <label>Sex</label>
+                    <input type="text" disabled class="form-control message" id="Sexo"
+                        style="resize:none;  size: 100%; "></textarea>
+                </div>
+            </div>
+            <div class="col-sm-1">
+                <div class="form-group">
+                    <label>Level</label>
+                    <input type="text" disabled class="form-control message" id="Idade"
+                        style="resize:none;  size: 100%; " value="1"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <label>Abilities</label>
+                    <textarea disabled class="form-control message" rows="6" id="Atributos"
+                        style="resize:none;  size: 100%; "></textarea>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="form-group">
+                    <label>General info</label>
+                    <textarea disabled class="form-control message" rows="6" id="CarcteristicasGerais"
+                        style="resize:none;  size: 100%; "></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label>Feats</label>
+                    <textarea disabled class="form-control message" rows="6" id="Talentos"
+                        style="resize:none;  size: 100%; "></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label>Complications</label>
+                    <textarea disabled class="form-control message" rows="6" id="Desvantagens"
+                        style="resize:none;  size: 100%; "></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    </br>
+    </br>
+    </br>
+    <p>Contact information: caiotqs@hotmail.com</a>.</p>
+</footer>
+
+</html>
