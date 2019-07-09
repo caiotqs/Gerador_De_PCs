@@ -44,7 +44,7 @@ var ListaArmas = [
     { Codigo: "0", dsc: "Simple (1d6)", dano: "1d6", obs: "Pode usar destreza para os testes de ataque corpo a corpo"},
     { Codigo: "1", dsc: "Martial (1d8)", dano: "1d8", obs: "Se usada com 2 mãos, aumenta 1 categoria o dado de dano."},
     { Codigo: "2", dsc: "Heavy (2d6)", dano: "2d6", obs: "Não pode andar e atacar no mesmo turno."},
-    { Codigo: "3", dsc: "Disarmed (1d6)", dano: "1d4"},
+    { Codigo: "3", dsc: "Disarmed (1d4)", dano: "1d4"},
     { Codigo: "4", dsc: "Improviso (1d6)", dano: "1d6"}
 ]
 

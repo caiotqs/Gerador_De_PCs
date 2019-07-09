@@ -40,13 +40,23 @@
         </div>
 
         </br>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <select id="listaRaca" class="form-control" chosen>
+                        <option value="-1">Choose a Race</option>
+                    </select>
+                </div>
+            </div>
+        </div>
 
+        </br>
         <div class="row">
             <div class="col-sm-4">
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="raceTalents">
                     <label class="form-check-label">Can learn others races talents.</label>
-                  </div>
+                </div>
             </div>
         </div>
         </br>
@@ -116,23 +126,24 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <div class="form-group">
-                    <label>Feats</label>
-                    <textarea disabled class="form-control message" rows="6" id="Talentos"
-                        style="resize:none;  size: 100%; "></textarea>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover table-dark" id="featTable">
+                 
+                </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover table-dark" id="complicationsTable">
+                 
+                </table>
                 </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="form-group">
-                    <label>Complications</label>
-                    <textarea disabled class="form-control message" rows="6" id="Desvantagens"
-                        style="resize:none;  size: 100%; "></textarea>
-                </div>
-            </div>
-        </div>
     </div>
 </body>
 <footer>

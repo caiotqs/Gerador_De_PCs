@@ -16,10 +16,11 @@ var ListaTalentosRapidos = [
 ]
 
 var ListaTiposTalento = [
- { Codigo: "00", lista: [] },
- { Codigo: "01", lista: [] },
- { Codigo: "02", lista: [] },
- { Codigo: "03", lista: [] }
+ { Codigo: "00", desc: "", lista: [] },
+ { Codigo: "01", desc: "", lista: [] },
+ { Codigo: "02", desc: "", lista: [] },
+ { Codigo: "03", desc: "", lista: [] },
+ { Codigo: "04", desc: "", lista: [] }
 ]
 
 var ListaTalentosGerais = [
@@ -87,21 +88,20 @@ var ListaTalentosRaciais = [
 
 var ListaTalentosMagicos = [
 {  Codigo: "00", title: "Abjuration", dsc: "When casting protection, barrier, and binding spells, once per day, you can reroll a failed Spell Casting Die test."},
-{  Codigo: "01", title: "Arcana", dsc: " You receive Advantage on INT and CHA tests to understand, identify, operate, and deal with arcane devices, accoutrements, activities, and beings (like golems, homunculi, and other magically created creatures)."},
-{  Codigo: "02", title: "Bind Familiar", dsc: "If you have attracted a Familiar (see Followers) you may perform a ritual and lose 2HD permanently to bind that creature to you. You have telepathy with and can share the familiar’s senses up to Far Away. The familiar allows you to memorize two additional spells and cast spells through the familiar up to Far Away. Additionally, you can divert the effects of Depletion and Corruption to your familiar."},
-{  Codigo: "03", title: "Conjuration", dsc: "When casting conjuration, summoning, teleportation and creation spells, once per day, you can reroll a failed Spell Casting Die test."},
-{  Codigo: "04", title: "Divination", dsc: "When casting prediction, informational, scrying, detection, and truth finding spells, once per day, you can reroll a failed Spell Casting Die test."},
-{  Codigo: "05", title: "Divine Smite", dsc: "If you have Holy Aura, you can call upon Divine power and attempt to cause 1d8 + your level damage to all Nearby undead and demonic creatures by testing WIS (add target’s HD to the roll)."},
-{  Codigo: "06", title: "Enchantment", dsc: "When casting charms, compulsion, & other mind", dsc: "affecting spells, once per day, you can reroll a failed Spell Casting Die test."},
-{  Codigo: "07", title: "Evocation", dsc: "When casting spells that control energy, forces, once per day, you can reroll a failed Spell Casting Die test."},
-{  Codigo: "08", title: "Grace X", dsc: "Divine power defends you and each time you take this Edge you have 1 AP per day (maximum 5 AP per day)."},
-{  Codigo: "09", title: "Holy Aura", dsc: "Calling on Divine power, you can attempt to banish each Nearby undead by testing WIS (add target’s HD to the roll).You cannot attempt to banish an individual creature more than once per day."},
-{  Codigo: "10", title: "Illusion", dsc: "When casting spells that deceive the minds or senses of others, once per day, you can reroll a failed Spell Casting Die test."},
-{  Codigo: "11", title: "Necromancy", dsc: "When casting spells that manipulate the forces of life, unlife, death and compulsion of undead creatures, once per day, you can reroll a failed Spell Casting Die test."},
-{  Codigo: "12", title: "Sorcery X", dsc: "You recognize and can shape magical forces of the world.You can cast Arcane spells and your Spell Casting Die starts at d4 increasing one step each subsequent time you select this Edge.See Spell Casting.You start out knowing a total of 1d4+2 total spells from the Level 1 and 2 Arcane Spell lists that are inscribed in your arcane tomes and codices. Your arcane power increase when you take this Edge again as shown on the Spellcaster Advancement Table."},
-{  Codigo: "13", title: "Theology", dsc: " You receive Advantage on INT, WIS, and CHA tests to understand, identify, and deal with supernatural objects, activities, and beings (like demons, angels, and spirits)."},
-{  Codigo: "14", title: "Theurgy X", dsc: " You have embraced a spiritual tradition of worship, prayer, and meditation and can access that supernatural power. You can cast Divine spells and your Spell Casting Die starts at d4 increasing one step each subsequent time you select this Edge. You start out knowing a total of 1d4 total spells from the Level 1 and 2 Divine Spell lists that you have recorded in your holy manuscripts. Your divine power increase when you take this Edge again as shown on the Spellcaster Advancement Table."},
-{  Codigo: "15", title: "Transmutation", dsc: "When casting spells that change the properties of a creature, objects, and materials, once per day, you can reroll a failed Spell Casting Die test."}
+{  Codigo: "01", title: "Arcana", dsc: "You receive Advantage on INT and CHA tests to understand, identify, operate, and deal with arcane devices, accoutrements, activities, and beings (like golems, homunculi, and other magically created creatures)."},
+{  Codigo: "02", title: "Conjuration", dsc: "When casting conjuration, summoning, teleportation and creation spells, once per day, you can reroll a failed Spell Casting Die test."},
+{  Codigo: "03", title: "Divination", dsc: "When casting prediction, informational, scrying, detection, and truth finding spells, once per day, you can reroll a failed Spell Casting Die test."},
+{  Codigo: "04", title: "Divine Smite", dsc: "If you have Holy Aura, you can call upon Divine power and attempt to cause 1d8 + your level damage to all Nearby undead and demonic creatures by testing WIS (add target’s HD to the roll)."},
+{  Codigo: "05", title: "Enchantment", dsc: "When casting charms, compulsion, & other mind-affecting spells, once per day, you can reroll a failed Spell Casting Die test."},
+{  Codigo: "06", title: "Evocation", dsc: "When casting spells that control energy, forces, once per day, you can reroll a failed Spell Casting Die test."},
+{  Codigo: "07", title: "Grace X", dsc: "Divine power defends you and each time you take this Edge you have 1 AP per day (maximum 5 AP per day)."},
+{  Codigo: "08", title: "Holy Aura", dsc: "Calling on Divine power, you can attempt to banish each Nearby undead by testing WIS (add target’s HD to the roll).You cannot attempt to banish an individual creature more than once per day."},
+{  Codigo: "09", title: "Illusion", dsc: "When casting spells that deceive the minds or senses of others, once per day, you can reroll a failed Spell Casting Die test."},
+{  Codigo: "10", title: "Necromancy", dsc: "When casting spells that manipulate the forces of life, unlife, death and compulsion of undead creatures, once per day, you can reroll a failed Spell Casting Die test."},
+{  Codigo: "11", title: "Sorcery X", dsc: "You recognize and can shape magical forces of the world.You can cast Arcane spells and your Spell Casting Die starts at d4 increasing one step each subsequent time you select this Edge. See Spell Casting. You start out knowing a total of 1d4+2 total spells from the Level 1 and 2 Arcane Spell lists that are inscribed in your arcane tomes and codices. Your arcane power increase when you take this Edge again as shown on the Spellcaster Advancement Table."},
+{  Codigo: "12", title: "Theology", dsc: "You receive Advantage on INT, WIS, and CHA tests to understand, identify, and deal with supernatural objects, activities, and beings (like demons, angels, and spirits)."},
+{  Codigo: "13", title: "Theurgy X", dsc: "You have embraced a spiritual tradition of worship, prayer, and meditation and can access that supernatural power. You can cast Divine spells and your Spell Casting Die starts at d4 increasing one step each subsequent time you select this Edge. You start out knowing a total of 1d4 total spells from the Level 1 and 2 Divine Spell lists that you have recorded in your holy manuscripts. Your divine power increase when you take this Edge again as shown on the Spellcaster Advancement Table."},
+{  Codigo: "14", title: "Transmutation", dsc: "When casting spells that change the properties of a creature, objects, and materials, once per day, you can reroll a failed Spell Casting Die test."}
 ]
 
 var ListaDesvantagens = [
@@ -123,7 +123,6 @@ var ListaDesvantagens = [
 {  Codigo: "15", title: "Vocal Tic", dsc: "You make noises, mumble, and talk incessantly.  A successful WIS test is required to remain silent for up to 5 minutes at critical times."},
 {  Codigo: "16", title: "Wanted", dsc: "You, or someone who looks just like you, has committed a serious crime and eluded punishment or owes someone important a substantial sum of money. Debt collectors or bounty hunters seem to always show up at inopportune moments."},
 
-
 {  Codigo: "17", title: "Feeble", dsc: "When the character’s life points fall below a third of this total, he suffers disadvantage to all actions until he is able to recover"},
 {  Codigo: "18", title: "Cowardice", dsc: "Each time the character finds himself in true danger, he will submit to the state of fear."},
 {  Codigo: "19", title: "Insufferable", dsc: "he always causes a negative reaction in others that he is unfamiliar with."},
@@ -132,34 +131,7 @@ var ListaDesvantagens = [
 {  Codigo: "22", title: "Pariah", dsc: "The character is automatically considered a pariah in all social circles."},
 {  Codigo: "23", title: "Powerful Enemy", dsc: "You, or someone who looks just like you, has committed a serious crime and eluded punishment or owes someone important a substantial sum of money. Debt collectors or bounty hunters seem to always show up at inopportune moments."},
 {  Codigo: "24", title: "Code of Conduct", dsc: "The character must follow a strict code of conduct, in someway related to his country of origin."},
-]
 
-
-var ListaComplicacoes = [
-{  Codigo: "01", title:"Absent-minded", dsc: "Preoccupied to the extent of being unaware of one’s immediate surroundings. Abstracted, daydreaming, inattentive, oblivious, forgetful."},
-{  Codigo: "02", title:"Abusive", dsc: "Characterised by improper infliction of physical or psychological maltreatment towards another."},
-{  Codigo: "03", title:"Addict", dsc: "One who is addicted to a compulsive activity. Examples: gambling, drugs, sex."},
-{  Codigo: "04", title:"Aimless", dsc: "Devoid of direction or purpose."},
-{  Codigo: "05", title:"Alcoholic", dsc: "A person who drinks alcoholic substances habitually and to excess."},
-{  Codigo: "06", title:"Anxious", dsc: "Full of mental distress or uneasiness because of fear of danger or misfortune; greatly worried; solicitous."},
-{  Codigo: "07", title:"Arrogant", dsc: "Having or displaying a sense of overbearing self-worth or self-importance. Inclined to social exclusiveness and who rebuff the advances of people considered inferior. Snobbish."},
-{  Codigo: "08", title:"Audacious", dsc: "Recklessly bold in defiance of convention, propriety, law, or the like; insolent; braze, disobedient."},
-{  Codigo: "09", title:"Bad Habit", dsc: "A revolting personal habit. Examples: picks nose, spits tobacco, drools."},
-{  Codigo: "10", title:"Bigmouth", dsc: "A loud-mouthed or gossipy person."},
-{  Codigo: "11", title:"Bigot", dsc: "One who is strongly partial to one’s own group, religion, race, or politics and is intolerant of those who differ."},
-{  Codigo: "12", title:"Blunt", dsc: "Characterised by directness in manner or speech; without subtlety or evasion. Frank, callous, insensitive, brusque."},
-{  Codigo: "13", title:"Bold", dsc: "In a bad sense, too forward; taking undue liberties; over assuming or confident; lacking proper modesty or restraint; rude; impudent. Abrupt, brazen, cheeky, brassy, audacious."},
-{  Codigo: "14", title:"Callous", dsc: "They are hardened to emotions, rarely showing any form of it in expression. Unfeeling. Cold."},
-{  Codigo: "15", title:"Childish", dsc: "Marked by or indicating a lack of maturity; puerile."},
-{  Codigo: "16", title:"Complex", dsc: "An exaggerated or obsessive concern or fear. (List specific complex.)"},
-{  Codigo: "17", title:"Cruel", dsc: "Mean to anyone or anything, without care or regard to consequences and feelings."},
-{  Codigo: "18", title:"Cursed", dsc: "A person who has befallen a prayer for evil or misfortune, placed under a spell, or borne into an evil circumstance, and suffers for it. Damned."},
-{  Codigo: "19", title:"Dependent", dsc: "Unable to exist, sustain oneself, or act appropriately or normally without the assistance or direction of another."},
-{  Codigo: "20", title:"Deranged", dsc: "Mentally decayed. Insane. Crazy. Mad. Psychotic."},
-{  Codigo: "21", title:"Dishonest", dsc: "Given to or using fraud, cheating; deceitful, deceptive, crooked, underhanded."},
-{  Codigo: "22", title:"Disloyal", dsc: "Lacking loyalty. Unfaithful, perfidious, traitorous, treasonable"},
-{  Codigo: "23", title:"Disorder", dsc: "An ailment that affects the function of mind or body. (List the disorders name if they have one.) See the Mental Disorder List."},
-{  Codigo: "24", title:"Disturbed", dsc: "Showing some or a few signs or symptoms of mental or emotional illness. Confused, disordered, neurotic, troubled."},
 {  Codigo: "25", title:"Dubious", dsc: "Fraught with uncertainty or doubt. Undecided, doubtful, unsure."},
 {  Codigo: "26", title:"Dyslexic", dsc: "Affected by dyslexia, a learning disorder marked by impairment of the ability to recognise and comprehend written words."},
 {  Codigo: "27", title:"Egotistical", dsc: "Characteristic of those having an inflated idea of their own importance. Boastful, pompous."},
@@ -258,5 +230,31 @@ var ListaComplicacoes = [
 {  Codigo: "120", title:"Vain", dsc: "Holding or characterized by an unduly high opinion of their physical appearance. Lovers of themselves. Conceited, egotistic, narcissistic."},
 {  Codigo: "121", title:"Weak-willed", dsc: "Lacking willpower, strength of will to carry out one’s decisions, wishes, or plans. Easily swayed."},
 {  Codigo: "122", title:"Withdrawn", dsc: "Not friendly or Sociable. Aloof."},
-{  Codigo: "123", title:"Zealous", dsc: "A fanatic."}
+{  Codigo: "123", title:"Zealous", dsc: "A fanatic."},
+
+{  Codigo: "124", title:"Absent-minded", dsc: "Preoccupied to the extent of being unaware of one’s immediate surroundings. Abstracted, daydreaming, inattentive, oblivious, forgetful."},
+{  Codigo: "125", title:"Abusive", dsc: "Characterised by improper infliction of physical or psychological maltreatment towards another."},
+{  Codigo: "126", title:"Addict", dsc: "One who is addicted to a compulsive activity. Examples: gambling, drugs, sex."},
+{  Codigo: "127", title:"Aimless", dsc: "Devoid of direction or purpose."},
+{  Codigo: "128", title:"Alcoholic", dsc: "A person who drinks alcoholic substances habitually and to excess."},
+{  Codigo: "129", title:"Anxious", dsc: "Full of mental distress or uneasiness because of fear of danger or misfortune; greatly worried; solicitous."},
+{  Codigo: "130", title:"Arrogant", dsc: "Having or displaying a sense of overbearing self-worth or self-importance. Inclined to social exclusiveness and who rebuff the advances of people considered inferior. Snobbish."},
+{  Codigo: "131", title:"Audacious", dsc: "Recklessly bold in defiance of convention, propriety, law, or the like; insolent; braze, disobedient."},
+{  Codigo: "132", title:"Bad Habit", dsc: "A revolting personal habit. Examples: picks nose, spits tobacco, drools."},
+{  Codigo: "134", title:"Bigmouth", dsc: "A loud-mouthed or gossipy person."},
+{  Codigo: "135", title:"Bigot", dsc: "One who is strongly partial to one’s own group, religion, race, or politics and is intolerant of those who differ."},
+{  Codigo: "136", title:"Blunt", dsc: "Characterised by directness in manner or speech; without subtlety or evasion. Frank, callous, insensitive, brusque."},
+{  Codigo: "137", title:"Bold", dsc: "In a bad sense, too forward; taking undue liberties; over assuming or confident; lacking proper modesty or restraint; rude; impudent. Abrupt, brazen, cheeky, brassy, audacious."},
+{  Codigo: "138", title:"Callous", dsc: "They are hardened to emotions, rarely showing any form of it in expression. Unfeeling. Cold."},
+{  Codigo: "139", title:"Childish", dsc: "Marked by or indicating a lack of maturity; puerile."},
+{  Codigo: "140", title:"Complex", dsc: "An exaggerated or obsessive concern or fear. (List specific complex.)"},
+{  Codigo: "141", title:"Cruel", dsc: "Mean to anyone or anything, without care or regard to consequences and feelings."},
+{  Codigo: "142", title:"Cursed", dsc: "A person who has befallen a prayer for evil or misfortune, placed under a spell, or borne into an evil circumstance, and suffers for it. Damned."},
+{  Codigo: "143", title:"Dependent", dsc: "Unable to exist, sustain oneself, or act appropriately or normally without the assistance or direction of another."},
+{  Codigo: "144", title:"Deranged", dsc: "Mentally decayed. Insane. Crazy. Mad. Psychotic."},
+{  Codigo: "145", title:"Dishonest", dsc: "Given to or using fraud, cheating; deceitful, deceptive, crooked, underhanded."},
+{  Codigo: "146", title:"Disloyal", dsc: "Lacking loyalty. Unfaithful, perfidious, traitorous, treasonable"},
+{  Codigo: "147", title:"Disorder", dsc: "An ailment that affects the function of mind or body. (List the disorders name if they have one.) See the Mental Disorder List."},
+{  Codigo: "148", title:"Disturbed", dsc: "Showing some or a few signs or symptoms of mental or emotional illness. Confused, disordered, neurotic, troubled."}
+
 ]
